@@ -3,7 +3,7 @@ title:  "Welcome to BoxOfStuff.com!"
 pubDate: 2020-11-16 09:56:44
 categories: 
 description: "desc"
-stub: welcome-to-boxofstuffcom
+slug: 2020/welcome-to-boxofstuff
 ---
 
 Do you have a box? Does it have stuff in it? Does it need a domain name? You've come to the right place. But in order to unlock the power of the box, you must make an offer that is reasonable.

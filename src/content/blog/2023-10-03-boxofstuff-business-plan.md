@@ -3,6 +3,7 @@ title:  "BoxOfStuff.com Business Plan"
 pubDate: 2023-10-03 07:56:44 -0500
 categories: 
 description: "this is the post description"
+slug: 2023/boxofstuff-business-plan
 ---
 
 ## 1. Executive Summary:

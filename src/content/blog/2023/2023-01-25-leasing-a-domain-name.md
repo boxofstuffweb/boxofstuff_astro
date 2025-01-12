@@ -4,6 +4,7 @@ pubDate: 2023-01-25 08:56:44 -0600
 categories: 
 description: "this is the post description"
 slug: 2023/leasing-a-domain-name
+heroImage: '/images/2025/boxofstuff-4.jpg'
 ---
 A domain name is a unique address that allows users to access a website on the internet. Leasing a domain name is a great option for businesses and individuals who want to use a specific domain name for a certain period of time without committing to a long-term purchase.
 

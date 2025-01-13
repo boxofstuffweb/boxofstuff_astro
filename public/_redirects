@@ -1,1 +1,2 @@
-welcome-to-boxofstuff 2020/welcome-to-boxofstuff 301
+# Redirect Jekyll category pages to Astro tag pages
+/welcome-to-boxofstuff /blog/2020/welcome-to-boxofstuff 301

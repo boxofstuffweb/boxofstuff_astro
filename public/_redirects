@@ -1,2 +1,10 @@
 # Redirect Jekyll category pages to Astro tag pages
 /welcome-to-boxofstuff /blog/2020/welcome-to-boxofstuff 301
+/page2 /blog 301
+/boxofstuff-business-plan /blog/2023/boxofstuff-business-plan 301
+/why-lease-a-domain-name /blog/2023/why-lease-a-domain-name 301
+/lease-boxofstuff.com-a-smart-decision /blog/2023/lease-boxofstuff.com-a-smart-decision 301
+/leasing-a-domain-name /blog/2023/leasing-a-domain-name 301
+/loot-boxes /blog/2021/loot-boxes 301
+/domain-for-sale /blog/2021/domain-for-sale 301
+/welcome-to-boxofstuff /blog/2020/welcome-to-boxofstuff 301

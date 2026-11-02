@@ -1,23 +1,697 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Bob!</h1>
-			<p>
-				Welcome to Box of Stuff! Interested in finding out what's in the box? 
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ─── NAVIGATION ─────────────────────────────────────────────── -->
+<nav class="topnav">
+	<span class="nav-logo">BoxOfStuff<span class="tld">.com</span></span>
+	<a href="#make-offer" class="nav-cta">Make an Offer</a>
+</nav>
+
+<!-- ─── HERO ──────────────────────────────────────────────────── -->
+<section class="hero">
+	<div class="hero-inner">
+		<div class="badge">Premium Domain For Sale</div>
+		<h1 class="domain-display">
+			BoxOfStuff<span class="tld-hero">.com</span>
+		</h1>
+		<p class="hero-tagline">
+			A short, memorable .com at the heart of the <strong>$145 billion subscription economy</strong>.<br />
+			Acquire the brand before someone else does.
+		</p>
+		<div class="hero-ctas">
+			<a href="#make-offer" class="btn-primary">Submit Your Offer</a>
+			<a href="#why-this-domain" class="btn-ghost">Why This Domain ↓</a>
+		</div>
+	</div>
+
+	<div class="stat-row">
+		<div class="stat">
+			<span class="stat-val">12</span>
+			<span class="stat-lbl">Characters</span>
+		</div>
+		<div class="stat-divider"></div>
+		<div class="stat">
+			<span class="stat-val">.COM</span>
+			<span class="stat-lbl">Premium TLD</span>
+		</div>
+		<div class="stat-divider"></div>
+		<div class="stat">
+			<span class="stat-val">5+</span>
+			<span class="stat-lbl">Years Established</span>
+		</div>
+		<div class="stat-divider"></div>
+		<div class="stat">
+			<span class="stat-val">$145B</span>
+			<span class="stat-lbl">Market by 2032</span>
+		</div>
+	</div>
+</section>
+
+<!-- ─── WHY THIS DOMAIN ────────────────────────────────────────── -->
+<section id="why-this-domain" class="section-light">
+	<div class="container">
+		<div class="section-label">Domain Quality</div>
+		<h2 class="section-title">What makes BoxOfStuff.com exceptional</h2>
+		<p class="section-sub">Great domains share four qualities. BoxOfStuff.com has all of them.</p>
+
+		<div class="quality-grid">
+			<div class="quality-card">
+				<div class="quality-icon">📣</div>
+				<h3>Easy to Say & Remember</h3>
+				<p>Three natural English words. You can say it over the phone, hear it on a podcast ad, and spell it correctly — first try, every time.</p>
+			</div>
+			<div class="quality-card">
+				<div class="quality-icon">🔤</div>
+				<h3>Short .COM Address</h3>
+				<p>Just 12 characters with the gold-standard .COM extension. Short domains are increasingly rare and consistently command premium resale prices.</p>
+			</div>
+			<div class="quality-card">
+				<div class="quality-icon">🎯</div>
+				<h3>Category-Defining</h3>
+				<p>The name <em>is</em> the concept. Whoever owns this domain owns the phrase in your customers' minds — and in search results.</p>
+			</div>
+			<div class="quality-card">
+				<div class="quality-icon">🔀</div>
+				<h3>Endlessly Versatile</h3>
+				<p>Works for subscription boxes, loot boxes, mystery boxes, e-commerce, gift services, and dozens of other business models — no rebrand required.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ─── USE CASES ──────────────────────────────────────────────── -->
+<section id="use-cases" class="section-dark">
+	<div class="container">
+		<div class="section-label light">Opportunity</div>
+		<h2 class="section-title light">Who should own this domain?</h2>
+		<p class="section-sub light">BoxOfStuff.com fits a wide range of high-growth businesses.</p>
+
+		<div class="use-case-grid">
+			<div class="use-case-card">
+				<div class="use-case-icon">📦</div>
+				<h3>Subscription Box Brand</h3>
+				<p>Launch the next Birchbox, FabFitFun, or BarkBox. The subscription box market has millions of active subscribers looking for their next box.</p>
+				<span class="use-case-tag">$65B+ industry</span>
+			</div>
+			<div class="use-case-card">
+				<div class="use-case-icon">🎲</div>
+				<h3>Mystery / Loot Boxes</h3>
+				<p>Gaming, anime, sneakers, collectibles — the mystery box format generates massive engagement and strong repeat purchase rates.</p>
+				<span class="use-case-tag">Viral potential</span>
+			</div>
+			<div class="use-case-card">
+				<div class="use-case-icon">🎁</div>
+				<h3>Gift Box Service</h3>
+				<p>Corporate gifting is a $242 billion market. A memorable domain removes friction when companies search for a curated gifting partner.</p>
+				<span class="use-case-tag">$242B market</span>
+			</div>
+			<div class="use-case-card">
+				<div class="use-case-icon">🧸</div>
+				<h3>Kids Toy Subscription</h3>
+				<p>Parents spend billions on discovery toys. BoxOfStuff.com naturally appeals to families and positions you as the go-to monthly fun box for kids.</p>
+				<span class="use-case-tag">High LTV</span>
+			</div>
+			<div class="use-case-card">
+				<div class="use-case-icon">🛍️</div>
+				<h3>E-Commerce Retailer</h3>
+				<p>A brand-first e-commerce store. The domain signals variety and discovery — perfect for a curated marketplace or multi-category retailer.</p>
+				<span class="use-case-tag">Brand-ready</span>
+			</div>
+			<div class="use-case-card">
+				<div class="use-case-icon">🎮</div>
+				<h3>Gaming & Collectibles</h3>
+				<p>Loot boxes, trading cards, limited-edition drops — the gaming collectible audience is passionate and spends freely on curated product experiences.</p>
+				<span class="use-case-tag">Passionate audience</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ─── MARKET OPPORTUNITY ─────────────────────────────────────── -->
+<section class="section-light">
+	<div class="container">
+		<div class="section-label">The Market</div>
+		<h2 class="section-title">The subscription box industry is booming</h2>
+
+		<div class="market-grid">
+			<div class="market-stat-big">
+				<span class="big-number">$145B</span>
+				<span class="big-label">Projected global subscription box market value by 2032 <em>(Grand View Research)</em></span>
+			</div>
+			<div class="market-facts">
+				<div class="market-fact">
+					<span class="fact-num">28%</span>
+					<span class="fact-desc">CAGR — one of the fastest-growing consumer retail segments</span>
+				</div>
+				<div class="market-fact">
+					<span class="fact-num">54M+</span>
+					<span class="fact-desc">Active subscription box subscribers in North America alone</span>
+				</div>
+				<div class="market-fact">
+					<span class="fact-num">3.5×</span>
+					<span class="fact-desc">Higher average order value vs. traditional one-time retail purchases</span>
+				</div>
+				<div class="market-fact">
+					<span class="fact-num">70%</span>
+					<span class="fact-desc">Of millennials prefer subscription gifting over traditional retail</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ─── DOMAIN QUALITY SIGNALS ─────────────────────────────────── -->
+<section class="section-mid">
+	<div class="container">
+		<div class="section-label">Domain Value</div>
+		<h2 class="section-title">Built-in advantages from day one</h2>
+
+		<div class="signal-list">
+			<div class="signal">
+				<div class="signal-check">✓</div>
+				<div class="signal-text">
+					<strong>Established domain — 5+ years old.</strong> Search engines favor aged domains. You're not starting from scratch; you're inheriting authority.
+				</div>
+			</div>
+			<div class="signal">
+				<div class="signal-check">✓</div>
+				<div class="signal-text">
+					<strong>No hyphens. No numbers. No tricks.</strong> BoxOfStuff.com is pure, pronounceable English — the highest tier of domain quality.
+				</div>
+			</div>
+			<div class="signal">
+				<div class="signal-check">✓</div>
+				<div class="signal-text">
+					<strong>Existing online presence.</strong> The domain has published content and indexed pages — a running start for SEO.
+				</div>
+			</div>
+			<div class="signal">
+				<div class="signal-check">✓</div>
+				<div class="signal-text">
+					<strong>Transferable via all major platforms.</strong> Dan.com, Sedo, Afternic, GoDaddy — smooth escrow transfer on your preferred marketplace.
+				</div>
+			</div>
+			<div class="signal">
+				<div class="signal-check">✓</div>
+				<div class="signal-text">
+					<strong>"Box" keywords drive massive search volume.</strong> Monthly searches for "subscription box," "mystery box," and "box of stuff" represent millions of potential buyers already looking for you.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ─── MAKE AN OFFER ──────────────────────────────────────────── -->
+<section id="make-offer" class="section-offer">
+	<div class="container offer-container">
+		<div class="offer-text">
+			<div class="section-label light">Acquisition</div>
+			<h2 class="section-title light">Ready to acquire BoxOfStuff.com?</h2>
+			<p class="section-sub light">
+				Submit your offer below. All serious inquiries are reviewed within 48 hours.
+				Secure transfer via escrow on your preferred platform.
 			</p>
-		</main>
-		<Footer />
-	</body>
+			<div class="offer-trust">
+				<div class="trust-item">🔒 Secure escrow transfer</div>
+				<div class="trust-item">⚡ Fast response — 48 hrs</div>
+				<div class="trust-item">📋 Clean title, no disputes</div>
+			</div>
+		</div>
+
+		<div class="offer-form-wrap">
+			<form
+				name="domain-offer"
+				method="POST"
+				data-netlify="true"
+				netlify-honeypot="bot-field"
+				class="offer-form"
+			>
+				<input type="hidden" name="form-name" value="domain-offer" />
+				<p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+				<div class="form-row">
+					<div class="form-group">
+						<label for="name">Your Name *</label>
+						<input type="text" id="name" name="name" placeholder="Jane Smith" required />
+					</div>
+					<div class="form-group">
+						<label for="email">Email Address *</label>
+						<input type="email" id="email" name="email" placeholder="jane@company.com" required />
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group">
+						<label for="company">Company / Brand</label>
+						<input type="text" id="company" name="company" placeholder="Acme Corp (optional)" />
+					</div>
+					<div class="form-group">
+						<label for="offer">Your Offer (USD) *</label>
+						<input type="text" id="offer" name="offer" placeholder="e.g. $25,000" required />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="message">How do you plan to use the domain?</label>
+					<textarea id="message" name="message" rows="4" placeholder="Tell us about your vision for BoxOfStuff.com..."></textarea>
+				</div>
+
+				<button type="submit" class="btn-submit">Submit Offer →</button>
+				<p class="form-note">Or email directly: <a href="mailto:domains@christoc.com">domains@christoc.com</a></p>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+<footer class="site-footer">
+	<div class="footer-inner">
+		<span class="footer-domain">BoxOfStuff<span class="tld">.com</span></span>
+		<span class="footer-sep">·</span>
+		<span>Premium domain available for acquisition</span>
+		<span class="footer-sep">·</span>
+		<a href="/blog">Blog</a>
+		<span class="footer-sep">·</span>
+		<a href="mailto:domains@christoc.com">Contact</a>
+	</div>
+	<div class="footer-copy">&copy; {new Date().getFullYear()} Christoc.com. All rights reserved.</div>
+</footer>
+
+</body>
 </html>
+
+<style>
+	/* ── Reset & Base ────────────────────────────── */
+	*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+	body {
+		font-family: 'Inter', 'Atkinson', system-ui, sans-serif;
+		background: #0c0c14;
+		color: #e2e8f0;
+		line-height: 1.6;
+		font-size: 16px;
+	}
+
+	a { color: inherit; text-decoration: none; }
+
+	/* ── Nav ─────────────────────────────────────── */
+	.topnav {
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 2rem;
+		background: rgba(12, 12, 20, 0.92);
+		backdrop-filter: blur(12px);
+		border-bottom: 1px solid rgba(255,255,255,0.08);
+	}
+	.nav-logo {
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: -0.02em;
+	}
+	.nav-cta {
+		background: #f59e0b;
+		color: #0c0c14;
+		font-weight: 700;
+		font-size: 0.875rem;
+		padding: 0.5rem 1.25rem;
+		border-radius: 6px;
+		transition: background 0.2s;
+	}
+	.nav-cta:hover { background: #fbbf24; }
+
+	/* ── Hero ────────────────────────────────────── */
+	.hero {
+		min-height: 90vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 5rem 2rem 4rem;
+		background:
+			radial-gradient(ellipse 80% 60% at 50% 0%, rgba(245,158,11,0.12) 0%, transparent 70%),
+			linear-gradient(180deg, #0c0c14 0%, #10101e 100%);
+		text-align: center;
+	}
+	.hero-inner { max-width: 900px; width: 100%; }
+
+	.badge {
+		display: inline-block;
+		background: rgba(245,158,11,0.15);
+		border: 1px solid rgba(245,158,11,0.4);
+		color: #f59e0b;
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		padding: 0.35rem 1rem;
+		border-radius: 100px;
+		margin-bottom: 2rem;
+	}
+
+	.domain-display {
+		font-size: clamp(2.8rem, 8vw, 6.5rem);
+		font-weight: 900;
+		letter-spacing: -0.04em;
+		color: #ffffff;
+		line-height: 1;
+		margin-bottom: 1.5rem;
+	}
+	.tld-hero { color: #f59e0b; }
+	.tld { color: #f59e0b; }
+
+	.hero-tagline {
+		font-size: clamp(1rem, 2.5vw, 1.25rem);
+		color: #94a3b8;
+		max-width: 640px;
+		margin: 0 auto 2.5rem;
+		line-height: 1.7;
+	}
+	.hero-tagline strong { color: #e2e8f0; }
+
+	.hero-ctas {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn-primary {
+		background: #f59e0b;
+		color: #0c0c14;
+		font-weight: 700;
+		font-size: 1rem;
+		padding: 0.875rem 2rem;
+		border-radius: 8px;
+		transition: background 0.2s, transform 0.1s;
+		display: inline-block;
+	}
+	.btn-primary:hover { background: #fbbf24; transform: translateY(-1px); }
+
+	.btn-ghost {
+		background: transparent;
+		color: #e2e8f0;
+		font-weight: 600;
+		font-size: 1rem;
+		padding: 0.875rem 2rem;
+		border-radius: 8px;
+		border: 1px solid rgba(255,255,255,0.2);
+		transition: border-color 0.2s;
+	}
+	.btn-ghost:hover { border-color: rgba(255,255,255,0.5); }
+
+	/* ── Stats bar ───────────────────────────────── */
+	.stat-row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0;
+		margin-top: 4rem;
+		background: rgba(255,255,255,0.04);
+		border: 1px solid rgba(255,255,255,0.08);
+		border-radius: 16px;
+		padding: 1.5rem 2rem;
+		max-width: 700px;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: 1;
+		min-width: 120px;
+		padding: 0.5rem;
+	}
+	.stat-val {
+		font-size: 1.75rem;
+		font-weight: 800;
+		color: #f59e0b;
+		letter-spacing: -0.03em;
+	}
+	.stat-lbl {
+		font-size: 0.75rem;
+		color: #64748b;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		margin-top: 0.25rem;
+	}
+	.stat-divider {
+		width: 1px;
+		height: 40px;
+		background: rgba(255,255,255,0.1);
+	}
+
+	/* ── Section Layout ──────────────────────────── */
+	.container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+	.section-light { background: #f8fafc; color: #1e293b; padding: 6rem 0; }
+	.section-dark  { background: #10101e; color: #e2e8f0; padding: 6rem 0; }
+	.section-mid   { background: #1e293b; color: #e2e8f0; padding: 6rem 0; }
+	.section-offer { background: #0c0c14; padding: 6rem 0; }
+
+	.section-label {
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: #f59e0b;
+		margin-bottom: 0.75rem;
+	}
+	.section-label.light { color: #fbbf24; }
+
+	.section-title {
+		font-size: clamp(1.75rem, 4vw, 2.5rem);
+		font-weight: 800;
+		letter-spacing: -0.03em;
+		color: #1e293b;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+	}
+	.section-title.light { color: #fff; }
+
+	.section-sub {
+		font-size: 1.1rem;
+		color: #64748b;
+		max-width: 600px;
+		margin-bottom: 3rem;
+	}
+	.section-sub.light { color: #94a3b8; }
+
+	/* ── Quality Grid ────────────────────────────── */
+	.quality-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 1.5rem;
+	}
+	.quality-card {
+		background: #fff;
+		border: 1px solid #e2e8f0;
+		border-radius: 12px;
+		padding: 2rem;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+	.quality-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+	.quality-icon { font-size: 2rem; margin-bottom: 1rem; }
+	.quality-card h3 { font-size: 1.1rem; font-weight: 700; color: #1e293b; margin-bottom: 0.5rem; }
+	.quality-card p { font-size: 0.95rem; color: #64748b; line-height: 1.65; margin: 0; }
+
+	/* ── Use Case Grid ───────────────────────────── */
+	.use-case-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1.5rem;
+	}
+	.use-case-card {
+		background: rgba(255,255,255,0.05);
+		border: 1px solid rgba(255,255,255,0.1);
+		border-radius: 12px;
+		padding: 2rem;
+		transition: background 0.2s, border-color 0.2s;
+	}
+	.use-case-card:hover {
+		background: rgba(245,158,11,0.06);
+		border-color: rgba(245,158,11,0.3);
+	}
+	.use-case-icon { font-size: 2rem; margin-bottom: 1rem; }
+	.use-case-card h3 { font-size: 1.1rem; font-weight: 700; color: #f1f5f9; margin-bottom: 0.5rem; }
+	.use-case-card p { font-size: 0.9rem; color: #94a3b8; line-height: 1.65; margin: 0 0 1rem; }
+	.use-case-tag {
+		display: inline-block;
+		background: rgba(245,158,11,0.15);
+		color: #f59e0b;
+		font-size: 0.7rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		padding: 0.25rem 0.65rem;
+		border-radius: 100px;
+	}
+
+	/* ── Market Numbers ──────────────────────────── */
+	.market-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+	.market-stat-big { text-align: center; }
+	.big-number {
+		display: block;
+		font-size: clamp(4rem, 8vw, 7rem);
+		font-weight: 900;
+		color: #f59e0b;
+		letter-spacing: -0.04em;
+		line-height: 1;
+		margin-bottom: 0.75rem;
+	}
+	.big-label { font-size: 1rem; color: #64748b; line-height: 1.5; }
+	.big-label em { color: #94a3b8; }
+
+	.market-facts { display: flex; flex-direction: column; gap: 1.5rem; }
+	.market-fact { display: flex; align-items: flex-start; gap: 1rem; }
+	.fact-num {
+		font-size: 1.75rem;
+		font-weight: 800;
+		color: #f59e0b;
+		min-width: 4.5rem;
+		letter-spacing: -0.03em;
+	}
+	.fact-desc { color: #94a3b8; font-size: 0.95rem; padding-top: 0.25rem; }
+
+	/* ── Signals ─────────────────────────────────── */
+	.signal-list { display: flex; flex-direction: column; gap: 1.5rem; max-width: 760px; }
+	.signal { display: flex; align-items: flex-start; gap: 1.25rem; }
+	.signal-check {
+		flex-shrink: 0;
+		width: 2rem;
+		height: 2rem;
+		background: rgba(245,158,11,0.15);
+		color: #f59e0b;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 0.875rem;
+		margin-top: 0.1rem;
+	}
+	.signal-text { font-size: 1rem; color: #cbd5e1; line-height: 1.65; }
+	.signal-text strong { color: #f1f5f9; }
+
+	/* ── Offer Section ───────────────────────────── */
+	.offer-container {
+		display: grid;
+		grid-template-columns: 1fr 1.2fr;
+		gap: 5rem;
+		align-items: start;
+	}
+	.offer-trust { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.75rem; }
+	.trust-item { font-size: 0.95rem; color: #94a3b8; }
+
+	/* ── Form ────────────────────────────────────── */
+	.offer-form-wrap {
+		background: rgba(255,255,255,0.04);
+		border: 1px solid rgba(255,255,255,0.1);
+		border-radius: 16px;
+		padding: 2.5rem;
+	}
+	.offer-form { display: flex; flex-direction: column; gap: 1.25rem; }
+	.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+	.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+	.form-group label { font-size: 0.8rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.06em; }
+
+	.offer-form input,
+	.offer-form textarea {
+		background: rgba(255,255,255,0.06);
+		border: 1px solid rgba(255,255,255,0.12);
+		border-radius: 8px;
+		color: #f1f5f9;
+		font-family: inherit;
+		font-size: 0.95rem;
+		padding: 0.75rem 1rem;
+		width: 100%;
+		transition: border-color 0.2s;
+		outline: none;
+	}
+	.offer-form input::placeholder,
+	.offer-form textarea::placeholder { color: #475569; }
+	.offer-form input:focus,
+	.offer-form textarea:focus { border-color: #f59e0b; }
+	.offer-form textarea { resize: vertical; }
+
+	.btn-submit {
+		background: #f59e0b;
+		color: #0c0c14;
+		font-weight: 800;
+		font-size: 1rem;
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		transition: background 0.2s;
+		font-family: inherit;
+	}
+	.btn-submit:hover { background: #fbbf24; }
+
+	.form-note { font-size: 0.8rem; color: #475569; text-align: center; }
+	.form-note a { color: #94a3b8; text-decoration: underline; }
+	.form-note a:hover { color: #f59e0b; }
+
+	.hidden { display: none; }
+
+	/* ── Footer ──────────────────────────────────── */
+	.site-footer {
+		background: #07070d;
+		border-top: 1px solid rgba(255,255,255,0.06);
+		padding: 2rem;
+		text-align: center;
+	}
+	.footer-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+		font-size: 0.875rem;
+		color: #475569;
+		margin-bottom: 0.5rem;
+	}
+	.footer-domain { font-weight: 700; color: #64748b; }
+	.footer-sep { color: #334155; }
+	.footer-inner a { color: #64748b; }
+	.footer-inner a:hover { color: #94a3b8; }
+	.footer-copy { font-size: 0.75rem; color: #334155; }
+
+	/* ── Responsive ──────────────────────────────── */
+	@media (max-width: 768px) {
+		.stat-divider { display: none; }
+		.stat-row { gap: 0.5rem; }
+		.market-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+		.offer-container { grid-template-columns: 1fr; gap: 2.5rem; }
+		.form-row { grid-template-columns: 1fr; }
+		.topnav { padding: 1rem; }
+		.hero { padding: 4rem 1rem 3rem; }
+	}
+</style>

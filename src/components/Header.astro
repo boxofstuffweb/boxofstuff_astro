@@ -1,77 +1,67 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
+		<a href="/" class="logo">BoxOfStuff<span class="tld">.com</span></a>
+		<div class="links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-		<div class="social-links">
-			<a href="https://www.autocrossblog.com" target="_blank">
-				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
-					<path fill="currentColor" d="M7.03 1.88c.252-1.01 1.688-1.01 1.94 0l2.905 11.62H14a.5.5 0 0 1 0 1H2a.5.5 0 0 1 0-1h2.125z" />
-				</svg>
-			</a>
-			<a href="https://bsky.app/profile/chrishammond.com" target="_blank">
-				<span class="sr-only">Follow Christoc on Blue Sky</span>
-				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.388c-.906-1.761-3.372-5.044-5.665-6.662c-2.197-1.55-3.034-1.283-3.583-1.033C2.116 3.978 2 4.955 2 5.528c0 .575.315 4.709.52 5.4c.68 2.28 3.094 3.05 5.32 2.803c-3.26.483-6.157 1.67-2.36 5.898c4.178 4.325 5.726-.927 6.52-3.59c.794 2.663 1.708 7.726 6.444 3.59c3.556-3.59.977-5.415-2.283-5.898c2.225.247 4.64-.523 5.319-2.803c.205-.69.52-4.825.52-5.399c0-.575-.116-1.55-.752-1.838c-.549-.248-1.386-.517-3.583 1.033c-2.293 1.621-4.76 4.904-5.665 6.664"/></svg>
-			</a>
-			<a href="https://www.chrishammond.com" target="_blank">
-				<span class="sr-only">Go to Chris Hammond's home page</span>
-				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-					<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-						<path d="M19.5 7A9 9 0 0 0 12 3a8.99 8.99 0 0 0-7.484 4" />
-						<path d="M11.5 3a17 17 0 0 0-1.826 4M12.5 3a17 17 0 0 1 1.828 4M19.5 17a9 9 0 0 1-7.5 4a8.99 8.99 0 0 1-7.484-4" />
-						<path d="M11.5 21a17 17 0 0 1-1.826-4m2.826 4a17 17 0 0 0 1.828-4M2 10l1 4l1.5-4L6 14l1-4m10 0l1 4l1.5-4l1.5 4l1-4M9.5 10l1 4l1.5-4l1.5 4l1-4" />
-					</g>
-				</svg>
-			</a>
+			<a href="/#make-offer" class="cta-link">Make an Offer</a>
 		</div>
 	</nav>
 </header>
+
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
+		padding: 0 1.5rem;
+		background: #0c0c14;
+		border-bottom: 1px solid rgba(255,255,255,0.08);
 	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		max-width: 1100px;
+		margin: 0 auto;
+		height: 60px;
 	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
+	.logo {
+		font-family: 'Inter', system-ui, sans-serif;
+		font-size: 1.05rem;
+		font-weight: 800;
+		color: #fff;
 		text-decoration: none;
+		letter-spacing: -0.02em;
 	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
+	.tld { color: #f59e0b; }
+	.links {
 		display: flex;
+		align-items: center;
+		gap: 0.25rem;
 	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
+	.links :global(a) {
+		color: #94a3b8;
+		text-decoration: none;
+		font-size: 0.875rem;
+		font-weight: 500;
+		padding: 0.4rem 0.75rem;
+		border-radius: 6px;
+		border-bottom: none;
+		transition: color 0.15s;
 	}
+	.links :global(a:hover),
+	.links :global(a.active) {
+		color: #e2e8f0;
+		border-bottom: none;
+	}
+	.cta-link {
+		background: #f59e0b !important;
+		color: #0c0c14 !important;
+		font-weight: 700 !important;
+		margin-left: 0.5rem;
+	}
+	.cta-link:hover { background: #fbbf24 !important; }
 </style>
